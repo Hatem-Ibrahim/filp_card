@@ -6,15 +6,6 @@
 
 body {
     height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
     -webkit-perspective: 1000px;
     perspective: 1000px;
     -webkit-transform-style: preserve-3d;
@@ -37,6 +28,11 @@ body {
     justify-content: center;
     align-items: center;
     padding: 10px;
+}
+
+.app {
+    max-width: fit-content;
+    margin: auto;
 }
 
 .app:hover .card {
@@ -82,6 +78,7 @@ body {
     text-align: center;
     width: 500px;
     height: 550px;
+    max-width: 97%;
     padding: 20px 50px;
     color: #333;
     transform-style: preserve-3d;
@@ -120,9 +117,4 @@ body {
     -moz-transform: rotateX(180deg);
     -ms-transform: rotateX(180deg);
     -o-transform: rotateX(180deg);
-}
-@media (max-width: 576px) {
-    .side {
-        width: 300px;
-    }
 }
